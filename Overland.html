@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n4-active wf-proximanova-i4-active wf-proximanova-n3-active wf-brandongrotesque-n4-active wf-brandongrotesque-i4-active wf-brandongrotesque-n7-active wf-brandongrotesque-i7-active wf-freightsanspro-n4-active wf-freightsanspro-i4-active wf-freightsanspro-n7-active wf-freightsanspro-i7-active wf-freightsanspro-n3-active wf-active" style="" lang=""><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Overland</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="https://overland-game.com/img/favicon.png">
+    <link rel="icon" type="image/png" href="https://overland-game.com/img/favicon.png">
+
+    <meta property="og:title" content="Overland">
+    <meta property="og:url" content="https://overland-game.com/">
+    <meta property="og:description" content="Make the most of a terrible situation. See things no one was meant to see. Survive - barely.">
+    <meta property="og:image" content="https://overland-game.com/twitter_card_large.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@OverlandGame">
+    <meta name="twitter:creator" content="@FinjiCo">
+    <meta name="twitter:title" content="Overland">
+    <meta name="twitter:description" content="Make the most of a terrible situation. See things no one was meant to see. Survive - barely.">
+    <meta name="twitter:image" content="https://overland-game.com/twitter_card_large.jpg">
+
+    <link rel="stylesheet" href="Overland_arquivos/normalize.min.css">
+    <link rel="stylesheet" href="Overland_arquivos/main_launch.css">
+
+    <script type="text/javascript" async="" src="Overland_arquivos/recaptcha__pt_br.js" crossorigin="anonymous" integrity="sha384-VQ7q42nj4SHJKgPWBdl9SdAIXfC47NOkd9ZSGCUIcIUbBvU2QqFztkai7KzheJrM"></script><script src="Overland_arquivos/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="Overland_arquivos/main.js"></script>
+    <script src="Overland_arquivos/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="Overland_arquivos/jql6fud.js"></script>
+    <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-brandon-grotesque{font-family:"brandon-grotesque",sans-serif;}.tk-freight-sans-pro{font-family:"freight-sans-pro",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-proxima-nova-n7;src:url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-proxima-nova-i7;src:url(https://use.typekit.net/af/347aea/00000000000000003b9ad1b2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/347aea/00000000000000003b9ad1b2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/347aea/00000000000000003b9ad1b2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-proxima-nova-n4;src:url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-proxima-nova-i4;src:url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-proxima-nova-n3;src:url(https://use.typekit.net/af/3333ef/00000000000000003b9ad1b5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/3333ef/00000000000000003b9ad1b5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/3333ef/00000000000000003b9ad1b5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-brandon-grotesque-n4;src:url(https://use.typekit.net/af/1da05b/0000000000000000000132df/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/1da05b/0000000000000000000132df/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/1da05b/0000000000000000000132df/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-brandon-grotesque-i4;src:url(https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-brandon-grotesque-n7;src:url(https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-brandon-grotesque-i7;src:url(https://use.typekit.net/af/383ab4/0000000000000000000132e4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/383ab4/0000000000000000000132e4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/383ab4/0000000000000000000132e4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-freight-sans-pro-n4;src:url(https://use.typekit.net/af/442215/000000000000000000010b5a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/442215/000000000000000000010b5a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/442215/000000000000000000010b5a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-freight-sans-pro-i4;src:url(https://use.typekit.net/af/3df5fe/000000000000000000010b5b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/3df5fe/000000000000000000010b5b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/3df5fe/000000000000000000010b5b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-freight-sans-pro-n7;src:url(https://use.typekit.net/af/1709eb/000000000000000000010b60/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/1709eb/000000000000000000010b60/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/1709eb/000000000000000000010b60/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-freight-sans-pro-i7;src:url(https://use.typekit.net/af/65fc7d/000000000000000000010b61/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/65fc7d/000000000000000000010b61/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/65fc7d/000000000000000000010b61/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-freight-sans-pro-n3;src:url(https://use.typekit.net/af/ba2099/000000000000000000010b58/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/ba2099/000000000000000000010b58/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/ba2099/000000000000000000010b58/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="Overland_arquivos/magnific-popup.css">
+    <script src="Overland_arquivos/jquery.magnific-popup.js"></script>
+
+    <script src="Overland_arquivos/api.js"></script>
+
+    <script type="text/javascript">
+      function checkForm(form)
+      {
+        if(!form.gdpr.checked) {
+          alert("Gotta check that GDPR box! Thanks!");
+          form.gdpr.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+
+    <script type="text/javascript" src="Overland_arquivos/api_002.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                disableOn: 700,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: false
+            });
+
+            $('.popup-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function(item) {
+                        return item.el.attr('title') + '<small></small>';
+                    }
+                }
+
+            });
+
+            $(document).ready(function() {
+    $('.popup-with-form').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#name',
+
+        // When elemened is focused, some mobile browsers in some cases zoom in
+        // It looks not nice, so we disable it:
+        callbacks: {
+            beforeOpen: function() {
+                if($(window).width() < 700) {
+                    this.st.focus = false;
+                } else {
+                    this.st.focus = '#name';
+                }
+            }
+        }
+    });
+});
+
+            
+                var buyButton = document.getElementById("buttonL");
+                if( buyButton ) {
+                    Itch.attachBuyButton(buyButton, {
+                        user: "finji",
+                        game: "overland"
+                    });
+                }
+
+            
+            Itch.getGameData({
+                user: "finji",
+                game: "overland",
+                secret: "UxjRAUVpW1vEywL1jh4YS46AUM",
+                onComplete: function(game) {
+                    var keyField = document.getElementById("key_quantity");
+                    var priceField = document.getElementById("game_price");
+                    var reward = game.rewards && game.rewards[0];
+                    if( reward ) {
+                        if( keyField ) {
+                            keyField.innerText = reward.amount_remaining + "/" + reward.amount;
+                        }
+                        if( priceField ) {
+                            priceField.innerText = reward.price.substr(0,3);
+                        }
+                    }
+                    else {
+                        if( keyField ) {
+                            keyField.innerText = "ERROR";
+                        }
+                        /*if( priceField ) {
+                            priceField.innerText = "ERROR";
+                        }*/
+                    }
+                }
+            });
+            
+        });
+    </script><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/7d485b/00000000000000003b9ad1b1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/347aea/00000000000000003b9ad1b2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/347aea/00000000000000003b9ad1b2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/347aea/00000000000000003b9ad1b2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/c9cde8/00000000000000003b9ad1b9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/4ba64f/00000000000000003b9ad1ba/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/3333ef/00000000000000003b9ad1b5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/3333ef/00000000000000003b9ad1b5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/3333ef/00000000000000003b9ad1b5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/1da05b/0000000000000000000132df/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/1da05b/0000000000000000000132df/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/1da05b/0000000000000000000132df/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/8f4e31/0000000000000000000132e3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/383ab4/0000000000000000000132e4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/383ab4/0000000000000000000132e4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/383ab4/0000000000000000000132e4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:freight-sans-pro;src:url(https://use.typekit.net/af/442215/000000000000000000010b5a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/442215/000000000000000000010b5a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/442215/000000000000000000010b5a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:freight-sans-pro;src:url(https://use.typekit.net/af/3df5fe/000000000000000000010b5b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/3df5fe/000000000000000000010b5b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/3df5fe/000000000000000000010b5b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:freight-sans-pro;src:url(https://use.typekit.net/af/1709eb/000000000000000000010b60/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/1709eb/000000000000000000010b60/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/1709eb/000000000000000000010b60/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:freight-sans-pro;src:url(https://use.typekit.net/af/65fc7d/000000000000000000010b61/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/65fc7d/000000000000000000010b61/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/65fc7d/000000000000000000010b61/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:freight-sans-pro;src:url(https://use.typekit.net/af/ba2099/000000000000000000010b58/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/ba2099/000000000000000000010b58/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/ba2099/000000000000000000010b58/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}</style>
+
+    </head>
+
+    <body>
+        <div id="keyart-bg"></div>
+
+        <main>
+            <header>
+
+                <img src="Overland_arquivos/logo.png">
+
+             <section><div class="buttonVideo"> <a class="popup-youtube" href="https://www.youtube.com/watch?v=FWvAzyeKrA0"><span>WATCH THE TRAILER</span></a></div></section>
+         </header>
+
+            <section>
+                <h2>Take care of a group of travelers on a post‑apocalyptic road trip across the United States in this turn-based survival game.
+                </h2>
+            </section>
+
+            <div class="group">
+                <img src="Overland_arquivos/group2.png">
+            </div>
+
+            <section>Fight scary creatures, rescue stranded survivors, and scavenge for supplies like fuel, first aid kits, and weapons. </section>
+            <section>  Decide where to go next, whether it's upgrading 
+this wrecked car, or rescuing that dog. Just remember, there are 
+consequences for every action.  </section>
+            <section> Get ready for close calls, dramatic escapes, hard 
+choices, arguing about whether or not that dog gets rescued, and the end
+ of the world. </section>
+
+            <section>
+                <h1> Available Now </h1>
+            </section>
+                        
+            <div class="storeGrid">
+                <ul>
+                    <li> <a href="https://www.nintendo.com/games/detail/overland-switch/" title="">SWITCH</a></li>
+                    <li> <a href="https://store.playstation.com/en-us/product/UP0406-CUSA14518_00-0000000000000000" title="">PS4</a></li>
+                    <li> <a href="https://www.microsoft.com/en-us/p/overland-by-finji/9nttrpb44p91" title="">XBOX</a></li>
+                    <li> <a href="https://finji.itch.io/overland" title="">Itch.io</a></li>
+                    <li> <a href="https://store.steampowered.com/app/355680/Overland/" title="">STEAM</a></li>
+                    <li> <a href="https://www.gog.com/game/overland" title="">GOG</a></li>
+                </ul>
+             </div>
+             
+             <section style="width: 190px; height: 90px;">
+                <a href="https://apps.apple.com/us/app/overland/id1467651942?itscg=30800&amp;itsct=overland"><img src="Overland_arquivos/Apple_Arcade_Badge_US.svg" style="margin-top: 20px; width: 190px; height: 90px;"></a>
+            </section>
+
+            <div class="gallery">
+                <div class="popup-gallery">
+                    <div class="buttonVideo"> <a href="https://www.finji.co/assets/images/overland/Overland_FullGame_Screenshot1.jpg" title="">VIEW GALLERY</a></div>
+                    <a href="https://www.finji.co/assets/images/overland/Overland_FullGame_Screenshot2.jpg" title=""></a>
+                    <a href="https://www.finji.co/assets/images/overland/Overland_FullGame_Screenshot3.jpg" title=""></a>
+                    <a href="https://www.finji.co/assets/images/overland/Overland_FullGame_Screenshot4.jpg" title=""></a>
+                    <a href="https://www.finji.co/assets/images/overland/Overland_FullGame_Screenshot5.jpg" title=""></a>
+                    <a href="https://www.finji.co/assets/images/overland/Overland_FullGame_Screenshot6.jpg" title=""></a>
+                    <a href="https://www.finji.co/assets/images/overland/Overland_FullGame_Screenshot7.jpg" title=""></a>
+                    <a href="https://www.finji.co/assets/images/overland/Overland_FullGame_Screenshot8.jpg" title=""></a>
+                    <a href="https://www.finji.co/assets/images/overland/Overland_FullGame_Screenshot9.jpg" title=""></a>
+                    <a href="https://www.finji.co/assets/images/overland/Overland_FullGame_Screenshot10.jpg" title=""></a>
+                </div>
+            </div>
+
+
+
+             <section><h1> Features </h1></section>
+
+            <section>
+                     
+                <ul>
+                    <li>Always keep fuel in the tank. Stay away from the creatures.<br>Be careful. Be quiet.</li>
+                     <li><img class="icon" src="Overland_arquivos/gas.png"></li>
+                    <li>Loud sounds attract trouble, and there's no way 
+you can fight them all. Grab as much gas as you can, rescue that trapped
+ stranger, and get back in the car before it's too late.</li>
+                    <li><img class="icon" src="Overland_arquivos/break.png"></li>
+                    <li>Travel West, through grasslands, over mountains,
+ across deserts, and to even stranger places. Every level, roadmap, and 
+character is randomly generated, so each trip is new.</li>
+                     <li><img class="icon" src="Overland_arquivos/map.png"></li>
+                    <li>Equip dozens of items, including medkits, shields, axes, potted plants, scavenged armor, and luggage racks.</li>
+                    <li><img class="icon" src="Overland_arquivos/break.png"></li>
+                    <li> A completely new end of the world<br>from Finji (Canabalt, Night in the Woods).</li>
+                     <li><img class="icon" src="Overland_arquivos/campfire.png"></li>
+                </ul>
+
+            </section>
+
+         
+            <div class="countdownSubscribe">
+
+
+                <!-- link that opens popup -->
+                      <a class="popup-with-form" href="#test-form"> <h3>Join the overland mailing list </h3></a>
+
+       <!-- form itself -->
+
+           <form action="https://d2dd74e5.sibforms.com/serve/MUIEAINq65dgdfojcXRreu-FTEZwhnjoIxA64tt1unOKPCdnizl2npaiqEZ_4gbswoWrpvoiHclYj4MAWKW4cBSPW5na-VEjasFsRVgeAVqsnDZOd_UzkQwrSWaGJ15y8NFUWfr8sAYBWajpNpu7cczMva22X2Tzv79krUBr3ZkEiKdhd67e81aM5WJXaIIUXCTsfdyoOpWPVi5H" method="POST" id="test-form" class="mfp-hide white-popup-block" accept-charset="utf-8" onsubmit="return checkForm(this);">
+
+              <input class="email_field" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL ADDRESS" data-required="true" required="">
+
+              <div class="g-recaptcha" style="padding-top: 20px; width: 304px; margin: auto;" data-sitekey="6Lf4U2AUAAAAAAa8Zdwuq1Pv7t_m_a0QgdeK3oIX"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="Overland_arquivos/anchor.html" role="presentation" name="a-mzcr58ivrjpv" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+              <div style="text-align:left;">
+                  <br>
+                  <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN">
+                  <span><strong>Marketing permission</strong>: I give my
+ consent to  to be in touch with me via email using the information I 
+have provided in this form for the purpose of news, updates and 
+marketing.</span>
+                  <br><br>
+                  <span><strong>What to expect</strong>: If you wish to 
+withdraw your consent and stop hearing from us, simply click the 
+unsubscribe link at the bottom of every email we send or contact us at 
+news@finji.co. We value and respect your personal data and privacy. To 
+view our privacy policy, please visit our website. By submitting this 
+form, you agree that we may process your information in accordance with 
+these terms.</span>
+                  <br><br>
+                  <span>It may take a few seconds for the confirmation page to appear.</span>
+                  <br>&nbsp;
+              </div>
+              <input form="test-form" type="submit" value="SIGN UP" name="subscribe" class="button-primary">
+              <input type="text" name="email_address_check" class="input--hidden" style="position: absolute; display: none;">
+              <input type="hidden" name="locale" value="en">
+              <input type="hidden" name="html_type" value="simple">
+
+            </form>
+
+                         
+              </div>
+
+         
+
+            <div class="windmill">
+                 <img src="Overland_arquivos/windmill.png">
+             </div>
+
+          
+             <section class="trademark">
+                <p>OVERLAND™, FINJI®, AND THE "REGAL WEASEL AND CROWN" LOGO ARE TRADEMARKS OF FINJI, LLC © FINJI 2019</p>
+            </section>
+
+            <footer>   
+                <a href="https://www.finji.co/"><img alt="Finji.co" src="Overland_arquivos/finjiLogo.png" width="130" height="163"></a>
+            </footer>
+
+         </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="z-index: 2000000000; position: relative;"><iframe title="o desafio reCAPTCHA expira em dois minutos" src="Overland_arquivos/bframe.html" style="width: 100%; height: 100%;" name="c-mzcr58ivrjpv" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" frameborder="0"></iframe></div></div></body></html>
