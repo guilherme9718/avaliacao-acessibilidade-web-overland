@@ -12,10 +12,10 @@ Descrições alternativas que não continham no site
 <img alt="logo Overland" src="Overland_arquivos/logo.png">
 
 ~~~html
-<img alt="two survivals and a dog. All of then behind a car with gas gallon, medkid and toolbox on top of it" src="Overland_arquivos/group2.png">
+<img alt="two survivals and a dog. All of then behind a car with gas gallon, medkit and toolbox on top of it" src="Overland_arquivos/group2.png">
 ~~~
 
-<img alt="two survivals and a dog. All of then behind a car with gas gallon, medkid and toolbox on top of it" src="Overland_arquivos/group2.png">
+<img alt="two survivals and a dog. All of then behind a car with gas gallon, medkit and toolbox on top of it" src="Overland_arquivos/group2.png">
 
 ~~~html
 <img alt="apple logo with description find it on arcade" src="Overland_arquivos/Apple_Arcade_Badge_US.svg" style="margin-top: 20px; width: 190px; height: 90px;">
