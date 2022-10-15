@@ -14,7 +14,7 @@
 ~~~
 "<iframe title="o desafio reCAPTCHA expira em dois minutos" src="Overland_arquivos/bframe.html" style…llow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" frameborder="0">"
 ~~~
-* Por:
+Por:
 ~~~
 "<iframe style="overflow:hidden;">"
 ~~~
