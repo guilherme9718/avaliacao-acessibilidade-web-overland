@@ -55,7 +55,7 @@ Por:
 pr-br
 ~~~
 
-### Descrição alternativa da imagem
+### Descrição alternativa das imagens
 Descrições alternativas que não continham no site
 
 ~~~html
