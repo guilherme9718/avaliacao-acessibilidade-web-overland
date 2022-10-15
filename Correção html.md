@@ -3,6 +3,9 @@
 * Adicionado `<title>a</title>`
 * Adicionado atributo `lang="en-us"`
 
+### Correção do arquivo Overland.html
+* Retirado os comentários do início
+
 ### Descrição alternativa da imagem
 Descrições alternativas que não continham no site
 
