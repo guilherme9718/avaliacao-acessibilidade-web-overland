@@ -5,6 +5,7 @@
 
 ### Correção do arquivo Overland.html
 * Retirado os comentários do início
+* Retirado a linha 10: <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 ### Descrição alternativa da imagem
 Descrições alternativas que não continham no site
